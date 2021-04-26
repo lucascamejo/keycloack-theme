@@ -1,7 +1,9 @@
 .login-pf body {
-    background: url("../img/bkgrnd.jpg") no-repeat center center fixed;
-    background-size: cover;
+    /* background: url("../img/bkgrnd.jpg") no-repeat center center fixed;
+    background-size: cover; */
+    background-color: #FFFFFF;
     height: 100%;
+    color: #949493;
 }
 
 /*IE compatibility*/
@@ -21,7 +23,7 @@
 }
 
 .pf-c-form-control:hover, .pf-c-form-control:focus {
-    border-bottom-color: #0066CC;
+    /* border-bottom-color: #0066CC; */
     border-bottom-color: var(--pf-global--primary-color--100);
     border-bottom-width: 2px;
     border-bottom-width: var(--pf-global--BorderWidth--md);
@@ -139,7 +141,7 @@
 
 /* default - IE compatibility */
 .pf-m-primary:hover {
-    background-color: #004080;
+    /* background-color: #004080; */
     background-color: var(--pf-global--primary-color--200);
 }
 
@@ -188,7 +190,7 @@ a#kc-current-locale-link::after {
 }
 
 .login-pf a:hover {
-    color: #0099d3;
+    /* color: #0099d3; */
 }
 
 #kc-logo {
@@ -204,15 +206,17 @@ a#kc-current-locale-link::after {
 }
 
 div.kc-logo-text {
-    background-image: url(../img/keycloak-logo-text.png);
-    background-repeat: no-repeat;
+    /* background-image: url(../img/keycloak-logo-text.png);
+    background-repeat: no-repeat; */
     height: 63px;
     width: 300px;
     margin: 0 auto;
 }
 
 div.kc-logo-text span {
-    display: none;
+    display: block;
+    font-size: 2em;
+    color: #949493;
 }
 
 #kc-header {
@@ -618,12 +622,12 @@ ul#kc-totp-supported-apps {
 
 .card-pf {
     margin: 0 auto;
-    box-shadow: var(--pf-global--BoxShadow--lg);
+    /* box-shadow: var(--pf-global--BoxShadow--lg); */
     padding: 0 20px;
     max-width: 500px;
-    border-top: 4px solid;
-    border-color: #0066CC; /* default - IE compatibility */
-    border-color: var(--pf-global--primary-color--100);
+    /* border-top: 4px solid;
+    border-color: #0066CC;
+    border-color: var(--pf-global--primary-color--100); */
 }
 
 /*phone*/
@@ -634,7 +638,7 @@ ul#kc-totp-supported-apps {
         margin-right: 0;
         padding-top: 0;
         border-top: 0;
-        box-shadow: 0 0;
+        /* box-shadow: 0 0; */
     }
 
     .kc-social-grid {
@@ -685,4 +689,56 @@ ul#kc-totp-supported-apps {
 
 #kc-back {
     margin-top: 5px;
+}
+
+/* Custom styles */
+.header-experta {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 40px;
+    border-bottom: 1px solid;
+    border-color: #f9f6f6;
+    box-shadow: 0 0  15px rgb(0 0 0  / 30%);
+    /* box-shadow: 0 1px 15px rgb(3 3 3 / 18%); */
+}
+
+.logo-seguro {
+    background-image: url(http://wstst.art.com/ARTServicio/ART/images/static/style10/logotypeLogin2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 125px;
+    width: 125px;
+    position: absolute;
+}
+
+.logo-art {
+    /* TODO: remove 3 lines below */
+    background-image: url(https://www.experta.com.ar/ARTServicio/ART/images/static/style10/logotypeLogin.jpg);
+    background-size: 140px;
+    margin-top: -3px;
+    /* TODO: uncomment when lines above are removed */
+    /* background-image: url(http://wstst.art.com/ARTServicio/ART/images/static/style10/logotypeLogin2.jpg); 
+    background-size: contain;*/
+    background-repeat: no-repeat;
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    margin-left: 131px;
+}
+
+.divider {
+    border-left: 1px solid #e4e0e0;
+    height: 40px;
+    position: absolute;
+    margin-left: 130px;
+}
+
+.button-experta {
+    background: #006196;
+    color: white;
+    width: 100%;
+    border: 0;
+    height: 40px;
 }

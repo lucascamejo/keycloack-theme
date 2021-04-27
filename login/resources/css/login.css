@@ -464,7 +464,6 @@ ul#kc-totp-supported-apps {
         position: relative;
         text-align: right;
         z-index: 9999;
-        width: 100px;
         align-self: flex-end;
         padding-top: 25px;
     }

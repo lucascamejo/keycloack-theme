@@ -37,7 +37,7 @@
                     />
                 </div>
 
-                <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
+                <div class="${properties.kcFormGroupClass!} ${properties.kcCustomPassRecoveryClass!}">
                     <div id="kc-form-options">
                         <#if realm.rememberMe && !usernameEditDisabled??>
                             <div class="checkbox">
@@ -51,7 +51,7 @@
                             </div>
                         </#if>
                         </div>
-                        <div class="${properties.kcFormOptionsWrapperClass!}">
+                        <div class="${properties.kcFormOptionsWrapperClass! kcCustomBoldClass}">
                             <#if realm.resetPasswordAllowed>
                                 <span><a tabindex="5" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
                             </#if>

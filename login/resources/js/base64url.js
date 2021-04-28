@@ -96,7 +96,7 @@ var base64url = base64url || {};
     }
 
     const encoding = {
-        chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_',
+        chars: 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyzáéíóúÁÉÍÓÚ0123456789-_',
         bits: 6
     }
 

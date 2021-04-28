@@ -711,7 +711,7 @@ ul#kc-totp-supported-apps {
 }
 
 .logo-seguro {
-    background-image: url(http://wstst.art.com/ARTServicio/ART/images/static/style10/logotypeLogin2.jpg);
+    background-image: url('../img/logo-seguros.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     height: 125px;
@@ -721,7 +721,7 @@ ul#kc-totp-supported-apps {
 
 .logo-art {
     /* TODO: remove 3 lines below */
-    background-image: url(https://www.experta.com.ar/ARTServicio/ART/images/static/style10/logotypeLogin.jpg);
+    background-image: url('../img/logo-art.jpg');
     background-size: 140px;
     margin-top: -3px;
     /* TODO: uncomment when lines above are removed */

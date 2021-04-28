@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'DIN';
-    src: url(./../fonts/353BD4_0_0.eot);
+    src: url('./../fonts/353BD4_0_0.woff');
   }
 
 .login-pf body {
@@ -15,22 +15,23 @@
 /*IE compatibility*/
 .pf-c-form-control {
     font-size: 14px;
-    font-size: var(--pf-global--FontSize--sm);
+    /* font-size: var(--pf-global--FontSize--sm); */
     border-width: 1px;
-    border-width: var(--pf-global--BorderWidth--sm);;
-    border-color: #CECECE;
-    border-color: var(--pf-global--BorderColor--300) var(--pf-global--BorderColor--300) var(--pf-global--BorderColor--200) var(--pf-global--BorderColor--300);
+    /* border-width: var(--pf-global--BorderWidth--sm); */
+    border: 1px solid #CECECE !important;
+    border-radius: 3px;
+    /* border-color: var(--pf-global--BorderColor--300) var(--pf-global--BorderColor--300) var(--pf-global--BorderColor--200) var(--pf-global--BorderColor--300); */
     background-color: #FFFFFF;
     color: #606060;
     /* background-color: var(--pf-global--BackgroundColor--100); */
     height: 50px;
-    height: calc(var(--pf-c-form-control--FontSize) * var(--pf-c-form-control--LineHeight) + var(--pf-c-form-control--BorderWidth) * 2 + var(--pf-c-form-control--PaddingTop) + var(--pf-c-form-control--PaddingBottom));
+    /* height: calc(var(--pf-c-form-control--FontSize) * var(--pf-c-form-control--LineHeight) + var(--pf-c-form-control--BorderWidth) * 2 + var(--pf-c-form-control--PaddingTop) + var(--pf-c-form-control--PaddingBottom)); */
     padding: 5px 0.5rem;
-    padding: var(--pf-c-form-control--PaddingTop) var(--pf-c-form-control--PaddingRight) var(--pf-c-form-control--PaddingBottom) var(--pf-c-form-control--PaddingLeft);
+    /* padding: var(--pf-c-form-control--PaddingTop) var(--pf-c-form-control--PaddingRight) var(--pf-c-form-control--PaddingBottom) var(--pf-c-form-control--PaddingLeft); */
 }
 
-/* .pf-c-form-control:hover, */ .pf-c-form-control:focus {
-    border-color: #006196;
+.pf-c-form-control:focus {
+    border: 1px solid #006196 !important;
     /* border-bottom-color: #0066CC; */
    /*  border-bottom-color: var(--pf-global--primary-color--100);
     border-bottom-width: 2px;

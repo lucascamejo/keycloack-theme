@@ -37,7 +37,7 @@
                     />
                 </div>
 
-                <div class="${properties.kcFormGroupClass!} ${properties.kcCustomPassRecoveryClass!}">
+                <div class="${properties.kcFormGroupClass!} ${properties.kcCustomPassRecoveryClass}">
                     <div id="kc-form-options">
                         <#if realm.rememberMe && !usernameEditDisabled??>
                             <div class="checkbox">

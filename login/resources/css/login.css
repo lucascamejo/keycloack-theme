@@ -479,7 +479,7 @@ ul#kc-totp-supported-apps {
         text-align: right;
         z-index: 9999;
         align-self: flex-end;
-        padding-top: 25px;
+        margin-top: 25px;
     }
 }
 
@@ -524,7 +524,7 @@ ul#kc-totp-supported-apps {
     #kc-locale {
         width: 100%;    
         text-align: right;
-        padding-top: 25px;
+        margin-top: 25px;
         z-index: 9999;
     }
 

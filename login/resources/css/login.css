@@ -665,7 +665,8 @@ ul#kc-totp-supported-apps {
 
 .login-pf-page .login-pf-signup {
     font-size: 15px;
-    color: #72767b;
+    color: #606060;
+    margin-bottom: 30px !important;
 }
 #kc-content-wrapper .row {
     margin-left: 0;

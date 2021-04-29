@@ -2,6 +2,8 @@
 <@layout.registrationLayout displayInfo=true displayMessage=!messagesPerField.existsError('username'); section>
     <#if section = "header">
         ${msg("emailForgotTitle")}
+    <#elseif section = "info" >
+        ${msg("emailInstruction")}
     <#elseif section = "form">
         <form id="kc-reset-password-form" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
             <div class="${properties.kcFormGroupClass!}">
@@ -30,11 +32,9 @@
                 </div>
 
                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                    <input class="${properties.kcCustomButtonClass}" type="submit" value="${msg("doSubmit")}"/>
+                    <input class="${properties.kcCustomButtonClass}" type="submit" value="${msg("emailPasswordRecovery")}"/>
                 </div>
             </div>
-        </form>
-    <#elseif section = "info" >
-        ${msg("emailInstruction")}
+        </form>    
     </#if>
 </@layout.registrationLayout>

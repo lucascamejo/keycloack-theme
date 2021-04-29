@@ -129,7 +129,7 @@
                             id="saveTOTPBtn" name="submitAction" value="Save">${msg("doSave")}
                     </button>
                     <button type="submit"
-                            class="${properties.kcButtonClass!} ${properties.kcButtonDefaultClass!} ${properties.kcButtonLargeClass!}"
+                            class="${properties.kcCustomButtonClass}"
                             id="cancelTOTPBtn" name="submitAction" value="Cancel">${msg("doCancel")}
                     </button>
                 </div>

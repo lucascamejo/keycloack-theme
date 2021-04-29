@@ -511,10 +511,10 @@ ul#kc-totp-supported-apps {
         float: none;
     }
 
-    #kc-info-wrapper {
+    /* #kc-info-wrapper {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         background-color: transparent;
-    }
+    } */
 
     .login-pf .container {
         padding-top: 15px;

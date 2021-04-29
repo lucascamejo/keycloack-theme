@@ -93,9 +93,16 @@
         <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
             <div id="kc-registration-container">
                 <div id="kc-registration">
+                    <span>
+                        <a tabindex="6" href="http://cluster-test.art.com:20442/page2" target="_blank">
+                            <strong>${msg("doHasProblems")}</strong>
+                        </a>
+                    </span>
+                </div> 
+                <#--  <div id="kc-registration">
                     <span>${msg("noAccount")} <a tabindex="6"
                                                  href="${url.registrationUrl}"><strong>${msg("doRegister")}</strong></a></span>
-                </div>
+                </div>  -->
             </div>
         </#if>
     </#if>

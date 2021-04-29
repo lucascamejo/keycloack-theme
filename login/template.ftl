@@ -45,7 +45,7 @@
     </div>
 </div>
 <div class="${properties.kcLoginClass!}">
-    <div id="kc-header" class="${properties.kcCustomHeaderClass!}">
+    <div id="kc-header" class="${properties.kcCustomHeaderTitleClass}">
         <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">
             <#--  ${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}  -->${msg("loginTitleHtml")}
         </div>

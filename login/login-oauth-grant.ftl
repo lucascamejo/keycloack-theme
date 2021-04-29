@@ -29,7 +29,7 @@
 
                     <div id="kc-form-buttons">
                         <div class="${properties.kcFormButtonsWrapperClass!}">
-                            <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="accept" id="kc-login" type="submit" value="${msg("doYes")}"/>
+                            <input class="${properties.kcCustomButtonClass}" name="accept" id="kc-login" type="submit" value="${msg("doYes")}"/>
                             <input class="${properties.kcCustomButtonClass}" name="cancel" id="kc-cancel" type="submit" value="${msg("doNo")}"/>
                         </div>
                     </div>

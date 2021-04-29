@@ -22,7 +22,7 @@
         <p class="delete-account-text">${msg("finalDeletionConfirmation")}</p>
 
       <div id="kc-form-buttons">
-            <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doConfirmDelete")}" />
+            <input class="${properties.kcCustomButtonClass}" type="submit" value="${msg("doConfirmDelete")}" />
             <#if triggered_from_aia>
             <button class="${properties.kcCustomButtonClass}" style="margin-left: calc(100% - 220px)" type="submit" name="cancel-aia" value="true" />${msg("doCancel")}</button>
             </#if>

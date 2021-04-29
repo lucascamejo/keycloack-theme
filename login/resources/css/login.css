@@ -33,6 +33,8 @@
 .pf-c-form-control:not(textarea) {
     height: 50px !important;
     font-size: 1.1em;
+    /* TODO: Test label simil material input */
+    /* margin-bottom: 15px; */
 }
 
 .pf-c-form-control:focus {
@@ -774,6 +776,7 @@ ul#kc-totp-supported-apps {
     position: absolute;
     margin-left: 10px;
     background: white;
+    z-index: 9999;
 }
 
 .login-pf {

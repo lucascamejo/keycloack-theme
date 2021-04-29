@@ -774,3 +774,7 @@ ul#kc-totp-supported-apps {
     margin-left: 10px;
     background: white;
 }
+
+.login-pf {
+    background: #FFFFFF !important;
+}

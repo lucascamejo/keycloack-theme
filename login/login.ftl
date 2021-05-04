@@ -99,10 +99,10 @@
                         </a>
                     </span>
                 </div> 
-                <#--  <div id="kc-registration">
+                <div id="kc-registration">
                     <span>${msg("noAccount")} <a tabindex="6"
                                                  href="${url.registrationUrl}"><strong>${msg("doRegister")}</strong></a></span>
-                </div>  -->
+                </div>
             </div>
         </#if>
     </#if>

@@ -302,7 +302,7 @@ div.kc-logo-text span {
 
 #kc-registration {
     margin-bottom: 0;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 /* TOTP */
@@ -721,7 +721,7 @@ ul#kc-totp-supported-apps {
 }
 
 .logo-seguro {
-    background-image: url('../img/logo-seguros.jpg');
+    background-image: url('../img/logo_experta-seguros.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 125px;
@@ -730,25 +730,20 @@ ul#kc-totp-supported-apps {
 }
 
 .logo-art {
-    /* TODO: remove 3 lines below */
-    background-image: url('../img/logo-art.jpg');
-    background-size: 140px;
-    margin-top: -3px;
-    /* TODO: uncomment when lines above are removed */
-    /* background-image: url(http://wstst.art.com/ARTServicio/ART/images/static/style10/logotypeLogin2.jpg); 
-    background-size: contain;*/
+    background-image: url('../img/logo_experta-art.png');
+    background-size: contain;
     background-repeat: no-repeat;
     height: 125px;
     width: 125px;
     position: absolute;
-    margin-left: 131px;
+    margin-left: 130px;
 }
 
 .divider {
     border-left: 1px solid #e4e0e0;
     height: 40px;
     position: absolute;
-    margin-left: 130px;
+    margin-left: 135px;
 }
 
 .button-experta {

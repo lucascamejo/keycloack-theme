@@ -1,10 +1,13 @@
 <#import "template.ftl" as layout>
-<@layout.registrationLayout displayInfo=true displayMessage=!messagesPerField.existsError('username'); section>
+<@layout.registrationLayout displayInfo=false displayMessage=!messagesPerField.existsError('username'); section>
     <#if section = "header">
-        ${msg("emailForgotTitle")}
-    <#elseif section = "info" >
-        ${msg("emailInstruction")}
-    <#elseif section = "form">
+        ${msg("emailForgotTitle")}    
+    <#elseif section = "form">       
+        <div id="kc-info" class="${properties.kcSignUpClass!}">
+            <div id="kc-info-reset-password" class="${properties.kcInfoAreaWrapperClass!}">
+                 ${msg("emailInstruction")}
+            </div>
+        </div> 
         <form id="kc-reset-password-form" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
             <div class="${properties.kcFormGroupClass!}">
                 <div class="${properties.kcLabelWrapperClass!}">
@@ -35,6 +38,6 @@
                     <input class="${properties.kcCustomButtonClass}" type="submit" value="${msg("emailPasswordRecovery")}"/>
                 </div>
             </div>
-        </form>    
+        </form>
     </#if>
 </@layout.registrationLayout>

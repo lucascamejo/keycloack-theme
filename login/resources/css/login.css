@@ -169,7 +169,10 @@
 }
 /*End of IE compatibility*/
 h1#kc-page-title {
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 #kc-locale ul {
@@ -776,4 +779,9 @@ ul#kc-totp-supported-apps {
 
 .login-pf {
     background: #FFFFFF !important;
+}
+
+#kc-info-reset-password {
+    font-size: 24px;
+    color: #606060;
 }

@@ -38,13 +38,27 @@
 }
 
 .pf-c-form-control:focus {
-    border: 1px solid #006196 !important;
+    border-color:#006196;
+    /*  border: 1px solid #006196 !important; */
     /* border-bottom-color: #0066CC; */
-   /*  border-bottom-color: var(--pf-global--primary-color--100);
+    /*  border-bottom-color: var(--pf-global--primary-color--100);
     border-bottom-width: 2px;
     border-bottom-width: var(--pf-global--BorderWidth--md); */
 }
 
+/* input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    height: 25px;
+    width: 150px;
+  }
+  
+  input:focus {
+    border-color: green;
+  }
+ */
 .pf-c-form-control[aria-invalid="true"] {
     border-bottom-color: #C9190B;
     border-bottom-color: var(--pf-global--danger-color--100);

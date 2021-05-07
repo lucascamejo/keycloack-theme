@@ -31,10 +31,10 @@
 }
 
 .pf-c-form-control:not(textarea) {
-    height: 50px !important;
+    height: 55px !important;
     font-size: 1.1em;
     /* TODO: Test label simil material input */
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
 }
 
 .pf-c-form-control:focus {
@@ -768,7 +768,7 @@ ul#kc-totp-supported-apps {
     color: white;
     width: 100%;
     border: 0;
-    height: 50px;
+    height: 55px;
     text-transform: uppercase;
 }
 
@@ -793,6 +793,11 @@ ul#kc-totp-supported-apps {
 
 .login-pf {
     background: #FFFFFF !important;
+}
+
+#kc-description {
+    line-height: 30px;
+    margin: 20px -40px -30px;
 }
 
 #kc-info-reset-password {

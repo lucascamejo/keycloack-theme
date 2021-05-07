@@ -3,7 +3,7 @@
     <#if section = "header">
         ${msg("emailForgotTitle")}    
     <#elseif section = "form">       
-        <div id="kc-info" class="${properties.kcSignUpClass!}">
+        <div id="kc-description" class="${properties.kcSignUpClass!}">
             <div id="kc-info-reset-password" class="${properties.kcInfoAreaWrapperClass!}">
                  ${msg("emailInstruction")}
             </div>

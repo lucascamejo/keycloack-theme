@@ -5,9 +5,7 @@
                 font-family: 'DIN';
                 font-size: 17px;
                 line-height: 1.66666667;
-                font-family: Roboto, Helvetica, Arial, sans-serif;
-                padding-left: 5%;
-                padding-right: 5%;">
+                font-family: Roboto, Helvetica, Arial, sans-serif;">
         <div style="display: flex;
                 height: 80px;            
                 padding-top: 10px;
@@ -53,9 +51,9 @@
                 </div>
                 <div style="display: flex; padding: 10px 0 20px 0; width: 100%;">
                     <div style="width: 90%; display: flex; margin: auto;">                            
-                        <div style=" width: 80%; border: 0px; background-color: #eaebed; min-height: 30px; text-align: center;"><a target="_blank" href="https://web.whatsapp.com/send?phone=5491147041830" rel="noopener noreferrer"><img src="https://i.ibb.co/YP4Kn5t/footer-wpp.png" alt="Cotizá" width="175" style=" width: 100%; max-width: 240px; background-color: white; border-radius: 5px;" ></a></div>
-                        <div style=" width: 80%; border: 0px; background-color: #eaebed; min-height: 30px; text-align: center;"><a target="_blank" href="tel:08007777278" rel="noopener noreferrer" ><img src="https://i.ibb.co/87PxKvy/footer-telefono.png" alt="Manual de producto" width="175" style="width: 100%; max-width: 240px; background-color: white; border-radius: 5px;" ></a></div>
-                        <div style=" width: 80%; border: 0px; background-color: #eaebed; min-height: 30px; text-align: center;"><a target="_blank" href="mailto:clientes@experta.com.ar" rel="noopener noreferrer" link_name="" ><img src="https://i.ibb.co/3f17MmH/footer-mail.png" alt="" width="173" style="width: 100%; max-width: 240px; background-color: white; border-radius: 5px;" ></a></div>
+                        <div style=" margin: auto; border: 0px; background-color: #eaebed; min-height: 40px; text-align: center; padding-right: 5px"><a target="_blank" href="https://web.whatsapp.com/send?phone=5491147041830" rel="noopener noreferrer"><img src="https://i.ibb.co/YP4Kn5t/footer-wpp.png" alt="Cotizá" width="175" style=" width: 100%; max-width: 240px; background-color: white; border-radius: 5px;" ></a></div>
+                        <div style=" margin: auto; border: 0px; background-color: #eaebed; min-height: 40px; text-align: center;"><a target="_blank" href="tel:08007777278" rel="noopener noreferrer" ><img src="https://i.ibb.co/87PxKvy/footer-telefono.png" alt="Manual de producto" width="175" style="width: 100%; max-width: 240px; background-color: white; border-radius: 5px;" ></a></div>
+                        <div style=" margin: auto; border: 0px; background-color: #eaebed; min-height: 40px; text-align: center;padding-left: 5px"><a target="_blank" href="mailto:clientes@experta.com.ar" rel="noopener noreferrer" link_name="" ><img src="https://i.ibb.co/3f17MmH/footer-mail.png" alt="" width="173" style="width: 100%; max-width: 240px; background-color: white; border-radius: 5px;" ></a></div>
                             
                     </div>
                 </div> 

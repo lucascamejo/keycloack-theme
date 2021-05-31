@@ -63,9 +63,9 @@
                 <div style="display: flex; padding: 10px 0 20px 0; width: 100%; padding:0">
                     <div style="width: 30%; display: flex; margin-left: 39%; align-items: center;">
                         <div style="font-size: 0.8em; color: #969696; margin-right: 15px; ">ADEMÁS ENCONTRANOS EN</div>                            
-                        <div style="margin: 1px; "><a target="_blank" href="https://www.youtube.com/channel/UChEF-f811Pd6etl3" rel="noopener noreferrer" ><img src="https://cloudstorage.embluemail.com/clientes/Experta/2020/Noviembre/0511-2/footer-experta-nuevo_13.jpg" width="38" style="display: block; width: 100%; max-width: 38px;" ></a></div>
-                        <div style="margin: 1px; "><a target="_blank" href="https://www.experta.com.ar/blogg/" rel="noopener noreferrer" ><img src="https://cloudstorage.embluemail.com/clientes/Experta/2020/Noviembre/0511-2/footer-experta-nuevo_15.jpg" width="37" style="display: block; width: 100%; max-width: 37px;" ></a></div>
-                        <div style="margin: 1px; "><a target="_blank" href="https://www.linkedin.com/company/experta-seguros" rel="noopener noreferrer" ><img src="https://cloudstorage.embluemail.com/clientes/Experta/2020/Noviembre/0511-2/footer-experta-nuevo_17.jpg" width="37" style="display: block; width: 100%; max-width: 37px;"></a></div>
+                        <div style="margin: 1px; "><a target="_blank" href="https://www.youtube.com/channel/UChEF-f811Pd6etl3" rel="noopener noreferrer" ><img src="https://i.ibb.co/qRhsN0B/footer-youtube.png" width="38" style="display: block; width: 100%; max-width: 40px; min-width: 30px;" ></a></div>
+                        <div style="margin: 1px; "><a target="_blank" href="https://www.experta.com.ar/blogg/" rel="noopener noreferrer" ><img src="https://i.ibb.co/KzMFxJK/footer-blog.png" width="37" style="display: block; width: 100%; max-width: 40px; min-width: 30px;" ></a></div>
+                        <div style="margin: 1px; "><a target="_blank" href="https://www.linkedin.com/company/experta-seguros" rel="noopener noreferrer" ><img src="https://i.ibb.co/dkWcKt7/footer-linkedin.png" width="37" style="display: block; width: 100%; max-width: 40px; min-width: 30px;"></a></div>
                     </div>
                 </div>         
              

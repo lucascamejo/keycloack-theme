@@ -15,13 +15,12 @@
                 border-color: #f9f6f6;
                 box-shadow: 0 0  15px rgb(0 0 0  / 30%);">
             <div style="display: flex;
-                  margin: auto;
-                  width: 30%;">
+                  margin: auto;">
               <div style="background-image: url('https://i.ibb.co/99CZ6hb/logo-experta-seguros.png');
                   background-size: contain;
                   background-repeat: no-repeat;
                   height: 125px;
-                  width: 250px;
+                  width: 150px;
                   text-align: center">
               </div>
               <div style="border-left: 1px solid #e4e0e0;
@@ -31,7 +30,7 @@
                   background-size: contain;
                   background-repeat: no-repeat;
                   height: 125px;
-                  width: 250px">
+                  width: 150px">
               </div>
             </div>
         </div>
@@ -79,13 +78,12 @@
                 border-color: #f9f6f6;
                 box-shadow: 0 0  15px rgb(0 0 0  / 30%);">
             <div style="display: flex;
-                  margin: auto;
-                  width: 20%;">
+                  margin: auto;">
               <div style="background-image: url('https://i.ibb.co/99CZ6hb/logo-experta-seguros.png');
                   background-size: contain;
                   background-repeat: no-repeat;
                   height: 125px;
-                  width: 150px;
+                  width: 80px;
                   text-align: center">
               </div>
               <div style="border-left: 1px solid #e4e0e0;
@@ -95,7 +93,7 @@
                   background-size: contain;
                   background-repeat: no-repeat;
                   height: 125px;
-                  width: 150px;">
+                  width: 80px;">
               </div>
             </div>
         </div>

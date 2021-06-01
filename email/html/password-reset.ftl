@@ -12,23 +12,32 @@
                 border-bottom: 1px solid;
                 border-color: #f9f6f6;
                 box-shadow: 0 0  15px rgb(0 0 0  / 30%);">
-            <div style="display: flex;
+            <div style="text-align: center;
                   margin: auto;">
               <div style="background-image: url('https://i.ibb.co/99CZ6hb/logo-experta-seguros.png');
                   background-size: contain;
                   background-repeat: no-repeat;
-                  height: 125px;
+                  height: 60px;
                   width: 150px;
-                  text-align: center">
+                  text-align: center;
+                  display: inline-block;
+                  margin-left: auto;
+                  margin-right: auto;">
               </div>
               <div style="border-left: 1px solid #e4e0e0;
-                  height: 60px;">
+                  height: 60px;
+                  display: inline-block;
+                  margin-left: auto;
+                  margin-right: auto;">
               </div>
               <div style="background-image: url('https://i.ibb.co/sCWRtS4/logo-experta-art.png');
                   background-size: contain;
                   background-repeat: no-repeat;
-                  height: 125px;
-                  width: 150px">
+                  height: 60px;
+                  width: 150px;
+                  display: inline-block;
+                  margin-left: auto;
+                  margin-right: auto;">
               </div>
             </div>
         </div>
@@ -75,23 +84,33 @@
                 border-bottom: 1px solid;
                 border-color: #f9f6f6;
                 box-shadow: 0 0  15px rgb(0 0 0  / 30%);">
-            <div style="display: flex;
+            <div style="text-align: center;
                   margin: auto;">
               <div style="background-image: url('https://i.ibb.co/99CZ6hb/logo-experta-seguros.png');
                   background-size: contain;
                   background-repeat: no-repeat;
-                  height: 125px;
+                  height: 45px;
                   width: 80px;
-                  text-align: center">
+                  text-align: center;
+                  display: inline-block;
+                  margin-left: auto;
+                  margin-right: auto;">
               </div>
               <div style="border-left: 1px solid #e4e0e0;
-                  height: 45px;">
+                  height: 30px;
+                  display: inline-block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  margin-bottom: 10px;">
               </div>
               <div style="background-image: url('https://i.ibb.co/sCWRtS4/logo-experta-art.png');
                   background-size: contain;
                   background-repeat: no-repeat;
-                  height: 125px;
-                  width: 80px;">
+                  height: 45px;
+                  width: 80px;
+                  display: inline-block;
+                  margin-left: auto;
+                  margin-right: auto;">
               </div>
             </div>
         </div>

@@ -804,3 +804,42 @@ ul#kc-totp-supported-apps {
     font-size: 24px;
     color: #606060;
 }
+
+@media (max-width: 500px) {
+    .button-experta {
+        height: 35px;
+    }
+
+    .pf-c-form-control {
+        height: 40px;
+    }
+
+    .pf-c-form-control:not(textarea) {
+        height: 40px !important;
+    }
+
+    h1#kc-page-title {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .header-experta {
+        height: 60px;
+    }
+
+    .logo-seguro {
+        height: 115px;
+        width: 115px;
+    }
+    
+    .logo-art {
+        height: 115px;
+        width: 115px;
+    }
+
+    .form-group {
+        margin-bottom: 10px !important
+    }
+}

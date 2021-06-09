@@ -42,7 +42,7 @@
             </div>
         </div>
         <div style="margin-top: 35px;">
-        ${kcSanitize(msg("passwordResetBodyHtml",link, linkExpiration, realmName, linkExpirationFormatter(linkExpiration)))?no_esc}
+        ${kcSanitize(msg("passwordResetBodyHtml",link, linkExpiration, realmName, linkExpirationFormatter(linkExpiration),user.username))?no_esc}
         </div>
         
         <div style="display: flex;

@@ -75,7 +75,7 @@
                         <span class="subtitle"><span class="required">*</span> ${msg("requiredFields")}</span>
                     </div>
                     <div class="col-md-10">
-                        <h1 id="kc-page-title"><#nested "header"></h1>
+                        <h1 id="kc-page-title"><#nested "header"></h1><#-- Title  -->
                     </div>
                 </div>
             <#else>
@@ -151,13 +151,13 @@
                     </form>
                 </#if>
 
-                <#if displayInfo>
+                <#--  <#if displayInfo>
                     <div id="kc-info" class="${properties.kcSignUpClass!}">
                         <div id="kc-info-wrapper" class="${properties.kcInfoAreaWrapperClass!}">
                             <#nested "info">
                         </div>
                     </div>
-                </#if>
+                </#if>  -->
             </div>
         </div>
         <#if realm.internationalizationEnabled  && locale.supported?size gt 1>

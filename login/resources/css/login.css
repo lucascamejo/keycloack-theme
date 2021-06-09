@@ -275,6 +275,10 @@ div.kc-logo-text span {
     text-align: center;
 }
 
+#kc-info-message {
+    text-align: center;
+}
+
 #kc-attempted-username {
     font-size: 20px;
     font-family: inherit;

@@ -57,7 +57,7 @@
         </div>
                 
         <div style="display: flex;
-                height: 250px;            
+                height: 200px;            
                 padding-top: 10px;
                 border-bottom: 1px solid;
                 border-color: #f9f6f6;

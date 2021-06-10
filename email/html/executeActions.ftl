@@ -44,8 +44,16 @@
               </div>
             </div>
         </div>
+        <div style="display: flex;
+                height: 100px;
+                background-color: #006196;">
+            <div style="text-align: center; margin: auto; color: white; font-size: 20px;">
+              <p>TE DAMOS LA BIENVENIDA <br>A EXPERTA ONLINE</p>
+             
+            </div>
+        </div>
         <div style="margin-top: 35px;">
-            ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration)))?no_esc}
+            ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration),user.username, user.getFirstName(), user.getLastName()))?no_esc}
         </div>
                 
         <div style="display: flex;

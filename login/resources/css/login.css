@@ -222,9 +222,9 @@ a#kc-current-locale-link::after {
     padding-top: 40px;
 }
 
-.login-pf a:hover {
-    /* color: #0099d3; */
-}
+/*.login-pf a:hover {
+     color: #0099d3; 
+}*/
 
 #kc-logo {
     width: 100%;
@@ -314,7 +314,6 @@ div.kc-logo-text span {
 
 #kc-form-options span {
     display: block;
-    margin-top: 20px;
 }
 
 #kc-form-options .checkbox {
@@ -806,7 +805,7 @@ ul#kc-totp-supported-apps {
 
 #kc-description {
     line-height: 30px;
-    margin-top: -5px;
+    margin-top: -5px !important;
 }
 
 #kc-info-reset-password {
@@ -814,6 +813,11 @@ ul#kc-totp-supported-apps {
     color: #606060;
 }
 
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+/* MEDIA QUERY */
 @media (max-width: 500px) {
     .button-experta {
         height: 35px;

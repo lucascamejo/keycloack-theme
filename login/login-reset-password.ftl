@@ -32,9 +32,11 @@
                     <input class="${properties.kcCustomButtonClass}" type="submit" value="${msg("emailPasswordRecovery")}"/>
                 </div>
 
-                <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
-                    <div class="${properties.kcFormOptionsWrapperClass!}">
-                        <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
+                <div class="${properties.kcMT20Class!}">
+                    <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
+                        <div class="${properties.kcFormOptionsWrapperClass!}">
+                            <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -7,26 +7,31 @@
       <div id="kc-form-wrapper">
         <#if realm.password>
             <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
-                <div class="${properties.kcFormGroupClass!}">
-                    <label for="username" class="${properties.kcLabelClass!}">
-                        <#--  <#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>  -->
-                        ${msg("username")}
-                        <#--  <#else>${msg("email")}</#if>  -->
-                    </label>
-
-                    <#if usernameEditDisabled??>
-                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
-                    <#else>
-                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off"
-                               aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
-                        />
-
-                        <#if messagesPerField.existsError('username','password')>
-                            <span id="input-error" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
-                                    ${kcSanitize(messagesPerField.getFirstError('username','password'))?no_esc}
-                            </span>
-                        </#if>
-                    </#if>
+                <div class="username-container ${properties.kcFormGroupClass!}">
+                    <div class="${properties.kcInputWrapperClass!}">
+                        <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ${properties.kcLabelClass!} 
+                        <#if usernameEditDisabled??>mdc-text-field--disabled</#if>">
+                            <i class="material-icons mdc-text-field__icon" tabindex="-1" role="button">person</i>
+                            <input required id="username" class="mdc-text-field__input ${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off" <#if usernameEditDisabled??>disabled</#if>>
+                            <div class="${properties.kcLabelWrapperClass!}">
+                                <label for="username" class="mdc-floating-label ${properties.kcLabelClass!}">
+                                    <#if !realm.loginWithEmailAllowed>
+                                        ${msg("username")}
+                                    <#elseif !realm.registrationEmailAsUsername>
+                                        ${msg("usernameOrEmail")}
+                                    <#else>
+                                        ${msg("email")}
+                                    </#if>
+                                </label>
+                            </div>
+                            <div class="mdc-notched-outline">
+                                <svg>
+                                    <path class="mdc-notched-outline__path"/>
+                                </svg>
+                            </div>
+                            <div class="mdc-notched-outline__idle"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="${properties.kcFormGroupClass!}">

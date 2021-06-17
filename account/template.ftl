@@ -26,8 +26,8 @@
 </head>
 <body class="admin-console user ${bodyClass}">
         
-    <header class="navbar navbar-default navbar-pf navbar-main header">
-        <nav class="navbar" role="navigation">
+    <#--  <header class="navbar navbar-default navbar-pf navbar-main header">  -->
+        <#--  <nav class="navbar" role="navigation">
             <div class="navbar-header">
                 <div class="container">
                     <h1 class="navbar-title">Keycloak</h1>
@@ -53,24 +53,31 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+        </nav>  -->
+        <div class="${properties.kcCustomHeaderClass}">
+    <div class="${properties.kcCustomLogoSeguroClass}">
+    </div>
+    <div class="${properties.kcCustomDividerClass}"></div>
+    <div class="${properties.kcCustomLogoARTClass}">
+    </div>
+</div>
+   <#--   </header>  -->
 
     <div class="container">
-        <div class="bs-sidebar col-sm-3">
+        <div class="bs-sidebar col-sm-3 mt-20">
             <ul>
-                <li class="<#if active=='account'>active</#if>"><a href="${url.accountUrl}">${msg("account")}</a></li>
+                <#--  <li class="<#if active=='account'>active</#if>"><a href="${url.accountUrl}">${msg("account")}</a></li>  -->
                 <#if features.passwordUpdateSupported><li class="<#if active=='password'>active</#if>"><a href="${url.passwordUrl}">${msg("password")}</a></li></#if>
-                <li class="<#if active=='totp'>active</#if>"><a href="${url.totpUrl}">${msg("authenticator")}</a></li>
+                <#--  <li class="<#if active=='totp'>active</#if>"><a href="${url.totpUrl}">${msg("authenticator")}</a></li>
                 <#if features.identityFederation><li class="<#if active=='social'>active</#if>"><a href="${url.socialUrl}">${msg("federatedIdentity")}</a></li></#if>
                 <li class="<#if active=='sessions'>active</#if>"><a href="${url.sessionsUrl}">${msg("sessions")}</a></li>
                 <li class="<#if active=='applications'>active</#if>"><a href="${url.applicationsUrl}">${msg("applications")}</a></li>
                 <#if features.log><li class="<#if active=='log'>active</#if>"><a href="${url.logUrl}">${msg("log")}</a></li></#if>
-                <#if realm.userManagedAccessAllowed && features.authorization><li class="<#if active=='authorization'>active</#if>"><a href="${url.resourceUrl}">${msg("myResources")}</a></li></#if>
+                <#if realm.userManagedAccessAllowed && features.authorization><li class="<#if active=='authorization'>active</#if>"><a href="${url.resourceUrl}">${msg("myResources")}</a></li></#if>  -->
             </ul>
         </div>
 
-        <div class="col-sm-9 content-area">
+        <div class="col-sm-9 content-area mt-20">
             <#if message?has_content>
                 <div class="alert alert-${message.type}">
                     <#if message.type=='success' ><span class="pficon pficon-ok"></span></#if>

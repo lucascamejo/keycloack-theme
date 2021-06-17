@@ -17,42 +17,60 @@
         <#if !realm.registrationEmailAsUsername>
             <div class="form-group ${messagesPerField.printIfExists('username','has-error')}">
                 <div class="col-sm-2 col-md-2">
-                    <label for="username" class="control-label">${msg("username")}</label> <#if realm.editUsernameAllowed><span class="required">*</span></#if>
+                    <label for="username" class="label-text-input">${msg("username")}</label> <#if realm.editUsernameAllowed><span class="required">*</span></#if>
                 </div>
 
                 <div class="col-sm-10 col-md-10">
-                    <input type="text" class="form-control" id="username" name="username" <#if !realm.editUsernameAllowed>disabled="disabled"</#if> value="${(account.username!'')}"/>
+                    <input type="text" class="pf-c-form-control" id="username" name="username" <#if !realm.editUsernameAllowed>disabled="disabled"</#if> value="${(account.username!'')}"/>
                 </div>
             </div>
         </#if>
 
-        <div class="form-group ${messagesPerField.printIfExists('email','has-error')}">
-            <div class="col-sm-2 col-md-2">
-            <label for="email" class="control-label">${msg("email")}</label> <span class="required">*</span>
-            </div>
+<#--  
+                <div class="${properties.kcFormGroupClass!}">
+                    <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
 
-            <div class="col-sm-10 col-md-10">
-                <input type="text" class="form-control" id="email" name="email" autofocus value="${(account.email!'')}"/>
-            </div>
+                    <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off"
+                           aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
+                    />
+                </div>
+
+  -->
+
+
+
+
+
+
+
+
+        <div class="${properties.kcFormGroupClass!}">
+            
+            <label for="email" class="${properties.kcLabelClass!}">${msg("email")}</label> <span class="required">*</span>
+            
+
+            
+                <input type="text" class="${properties.kcInputClass!}" id="email" name="email" autofocus value="${(account.email!'')}"/>
+           
         </div>
 
         <div class="form-group ${messagesPerField.printIfExists('firstName','has-error')}">
             <div class="col-sm-2 col-md-2">
-                <label for="firstName" class="control-label">${msg("firstName")}</label> <span class="required">*</span>
+                <label for="firstName" class="label-text-input">${msg("firstName")}</label> <span class="required">*</span>
             </div>
 
             <div class="col-sm-10 col-md-10">
-                <input type="text" class="form-control" id="firstName" name="firstName" value="${(account.firstName!'')}"/>
+                <input type="text" class="pf-c-form-control" id="firstName" name="firstName" value="${(account.firstName!'')}"/>
             </div>
         </div>
 
         <div class="form-group ${messagesPerField.printIfExists('lastName','has-error')}">
             <div class="col-sm-2 col-md-2">
-                <label for="lastName" class="control-label">${msg("lastName")}</label> <span class="required">*</span>
+                <label for="lastName" class="label-text-input">${msg("lastName")}</label> <span class="required">*</span>
             </div>
 
             <div class="col-sm-10 col-md-10">
-                <input type="text" class="form-control" id="lastName" name="lastName" value="${(account.lastName!'')}"/>
+                <input type="text" class="pf-c-form-control" id="lastName" name="lastName" value="${(account.lastName!'')}"/>
             </div>
         </div>
 
@@ -60,9 +78,10 @@
             <div id="kc-form-buttons" class="col-md-offset-2 col-md-10 submit">
                 <div class="">
                     <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
-                    <button type="submit" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="submitAction" value="Save">${msg("doSave")}</button>
+                    <#--  Checkear un error con  properties -->
+<#--                      <button type="submit" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="submitAction" value="Save">${msg("doSave")}</button>
                     <button type="submit" class="${properties.kcCustomButtonClass}" name="submitAction" value="Cancel">${msg("doCancel")}</button>
-                </div>
+    -->              </div>
             </div>
         </div>
     </form>

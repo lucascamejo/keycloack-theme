@@ -63,10 +63,11 @@
 </div>
    <#--   </header>  -->
 
-    <div class="container">
-        <div class="bs-sidebar col-sm-3 mt-20">
+    <div class="container-fluid">
+    <div class="row mt-20">
+        <div class="col-md-3 mt-20">
             <ul>
-                <#--  <li class="<#if active=='account'>active</#if>"><a href="${url.accountUrl}">${msg("account")}</a></li>  -->
+                <li class="<#if active=='account'>active</#if>"><a href="${url.accountUrl}">${msg("account")}</a></li> 
                 <#if features.passwordUpdateSupported><li class="<#if active=='password'>active</#if>"><a href="${url.passwordUrl}">${msg("password")}</a></li></#if>
                 <#--  <li class="<#if active=='totp'>active</#if>"><a href="${url.totpUrl}">${msg("authenticator")}</a></li>
                 <#if features.identityFederation><li class="<#if active=='social'>active</#if>"><a href="${url.socialUrl}">${msg("federatedIdentity")}</a></li></#if>
@@ -77,7 +78,7 @@
             </ul>
         </div>
 
-        <div class="col-sm-9 content-area mt-20">
+        <div class="col-md-9">
             <#if message?has_content>
                 <div class="alert alert-${message.type}">
                     <#if message.type=='success' ><span class="pficon pficon-ok"></span></#if>
@@ -88,6 +89,7 @@
 
             <#nested "content">
         </div>
+    </div>
     </div>
 
 </body>

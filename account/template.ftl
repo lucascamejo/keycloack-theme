@@ -65,7 +65,7 @@
 
     <div class="container-fluid">
     <div class="row mt-20">
-        <div class="col-md-3 mt-20">
+        <div class="col-md-2 mt-20">
             <ul>
                 <li class="<#if active=='account'>active</#if>"><a href="${url.accountUrl}">${msg("account")}</a></li> 
                 <#if features.passwordUpdateSupported><li class="<#if active=='password'>active</#if>"><a href="${url.passwordUrl}">${msg("password")}</a></li></#if>
@@ -78,7 +78,7 @@
             </ul>
         </div>
 
-        <div class="col-md-9">
+        <div class="col-md-10 ml-19">
             <#if message?has_content>
                 <div class="alert alert-${message.type}">
                     <#if message.type=='success' ><span class="pficon pficon-ok"></span></#if>

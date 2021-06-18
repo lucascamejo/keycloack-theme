@@ -1,70 +1,55 @@
 <#import "template.ftl" as layout>
 <@layout.mainLayout active='account' bodyClass='user'; section>
 
-    <div class="row">
-        <div class="col-md-10">
-            <h2>${msg("editAccountHtmlTitle")}</h2>
-        </div>
-        <div class="col-md-2 subtitle">
-            <span class="subtitle"><span class="required">*</span> ${msg("requiredFields")}</span>
-        </div>
+    <div class="col-md-4 col-md-offset-1">
+        <div class="row">
+            <div class="col-md-10">
+                <h2>${msg("editAccountHtmlTitle")}</h2>
+            </div>
+            <#--   <div class="col-md-2 subtitle">
+                    <span class="subtitle"> ${msg("requiredFields")}</span>
+                </div>  -->
+        </div> 
     </div>
 
-    <form action="${url.accountUrl}" class="form-horizontal" method="post">
-
+    <form action="${url.accountUrl}" class="row" method="post">
+    <div class="col-md-10 col-md-offset-1 mt-20">
         <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
-
         <#if !realm.registrationEmailAsUsername>
-            <div class="form-group ${messagesPerField.printIfExists('username','has-error')}">
-                <div class="col-sm-2 col-md-2">
-                    <label for="username" class="control-label">${msg("username")}</label> <#if realm.editUsernameAllowed><span class="required">*</span></#if>
-                </div>
-
-                <div class="col-sm-10 col-md-10">
-                    <input type="text" class="form-control" id="username" name="username" <#if !realm.editUsernameAllowed>disabled="disabled"</#if> value="${(account.username!'')}"/>
-                </div>
+            <div class="col-md-12 mb-5">
+                <label for="username" class="${properties.kcLabelClass!}">${msg("username")}</label> <#if realm.editUsernameAllowed></#if>
+                <input type="text" class="pf-c-form-control col-md-8" id="username" name="username" <#if !realm.editUsernameAllowed>disabled="disabled"</#if> value="${(account.username!'')}"/>
             </div>
         </#if>
 
-        <div class="form-group ${messagesPerField.printIfExists('email','has-error')}">
-            <div class="col-sm-2 col-md-2">
-            <label for="email" class="control-label">${msg("email")}</label> <span class="required">*</span>
-            </div>
-
-            <div class="col-sm-10 col-md-10">
-                <input type="text" class="form-control" id="email" name="email" autofocus value="${(account.email!'')}"/>
-            </div>
+        <div class="col-md-12 mb-5">            
+            <label for="email" class="${properties.kcLabelClass!}">${msg("email")}</label>            
+            <input type="text" class="pf-c-form-control col-md-8" id="email" name="email" autofocus value="${(account.email!'')}"/>           
         </div>
 
-        <div class="form-group ${messagesPerField.printIfExists('firstName','has-error')}">
-            <div class="col-sm-2 col-md-2">
-                <label for="firstName" class="control-label">${msg("firstName")}</label> <span class="required">*</span>
-            </div>
-
-            <div class="col-sm-10 col-md-10">
-                <input type="text" class="form-control" id="firstName" name="firstName" value="${(account.firstName!'')}"/>
-            </div>
+        <div class="col-md-12 mb-5">
+            <label for="firstName" class="${properties.kcLabelClass!}">${msg("firstName")}</label> 
+            <input type="text" class="pf-c-form-control col-md-8" id="firstName" name="firstName" value="${(account.firstName!'')}"/>
         </div>
 
-        <div class="form-group ${messagesPerField.printIfExists('lastName','has-error')}">
-            <div class="col-sm-2 col-md-2">
-                <label for="lastName" class="control-label">${msg("lastName")}</label> <span class="required">*</span>
-            </div>
-
-            <div class="col-sm-10 col-md-10">
-                <input type="text" class="form-control" id="lastName" name="lastName" value="${(account.lastName!'')}"/>
-            </div>
+        <div class="col-md-12 mb-5">
+            <label for="lastName" class="${properties.kcLabelClass!}">${msg("lastName")}</label>
+            <input type="text" class="pf-c-form-control col-md-8" id="lastName" name="lastName" value="${(account.lastName!'')}"/>
         </div>
+    </div>
+        
 
-        <div class="form-group">
-            <div id="kc-form-buttons" class="col-md-offset-2 col-md-10 submit">
-                <div class="">
-                    <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
-                    <button type="submit" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="submitAction" value="Save">${msg("doSave")}</button>
-                    <button type="submit" class="${properties.kcCustomButtonClass}" name="submitAction" value="Cancel">${msg("doCancel")}</button>
-                </div>
+    <div class="col-md-10 col-md-offset-1 mt-20">
+            <div class="col-md-5">
+                <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
+                <button type="submit" class="button-experta" name="submitAction" value="Save">${msg("doSave")}</button>
             </div>
-        </div>
-    </form>
+            <div class="col-md-5">
+                <button type="submit" class="button-experta" name="submitAction" value="Cancel">${msg("doCancel")}</button>
+            </div>
+    </div>
+</form>
+
+
 
 </@layout.mainLayout>

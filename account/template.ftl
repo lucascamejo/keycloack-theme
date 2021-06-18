@@ -55,12 +55,30 @@
             </div>
         </nav>  -->
         <div class="${properties.kcCustomHeaderClass}">
-    <div class="${properties.kcCustomLogoSeguroClass}">
-    </div>
-    <div class="${properties.kcCustomDividerClass}"></div>
-    <div class="${properties.kcCustomLogoARTClass}">
-    </div>
-</div>
+            <div class="${properties.kcCustomLogoSeguroClass}">
+            </div>
+            <div class="${properties.kcCustomDividerClass}"></div>
+            <div class="${properties.kcCustomLogoARTClass}">
+            </div>
+            <div class="logout">
+                    <ul >
+                        <#--  <#if realm.internationalizationEnabled>
+                            <li>
+                                <div class="kc-dropdown" id="kc-locale-dropdown">
+                                    <a href="#" id="kc-current-locale-link">${locale.current}</a>
+                                    <ul>
+                                        <#list locale.supported as l>
+                                            <li class="kc-dropdown-item"><a href="${l.url}">${l.label}</a></li>
+                                        </#list>
+                                    </ul>
+                                </div>
+                            <li>
+                        </#if>  -->
+                        <#if referrer?has_content && referrer.url?has_content><li><a href="${referrer.url}" id="referrer">${msg("backTo",referrer.name)}</a></li></#if>
+                        <li><a href="${url.logoutUrl}">${msg("doSignOut")}</a></li>
+                    </ul>
+                </div>
+        </div>
    <#--   </header>  -->
 
     <div class="container-fluid">
@@ -78,7 +96,7 @@
             </ul>
         </div>
 
-        <div class="col-md-10 ml-19">
+        <div class="col-md-10 pl-4">
             <#if message?has_content>
                 <div class="alert alert-${message.type}">
                     <#if message.type=='success' ><span class="pficon pficon-ok"></span></#if>

@@ -17,7 +17,7 @@
             <input type="text" id="username" name="username" value="${(account.username!'')}" autocomplete="username" readonly="readonly" style="display:none;">
 
             <#if password.passwordSet>
-                <div class="col-md-12">
+                <div class="col-md-12 mb-5">
                         <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
 
                         <input type="password" class="pf-c-form-control col-md-8" id="password" name="password" autofocus autocomplete="current-password">
@@ -26,13 +26,13 @@
 
             <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
 
-            <div class="col-md-12">
+            <div class="col-md-12 mb-5">
                     <label for="password-new" class="${properties.kcLabelClass!}">${msg("passwordNew")}</label>
 
                     <input type="password" class="pf-c-form-control col-md-8" id="password-new" name="password-new" autocomplete="new-password">
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12 mb-5">
                     <label for="password-confirm" class="${properties.kcLabelClass!}" class="two-lines">${msg("passwordConfirm")}</label>
 
                     <input type="password" class="pf-c-form-control col-md-8" id="password-confirm" name="password-confirm" autocomplete="new-password">

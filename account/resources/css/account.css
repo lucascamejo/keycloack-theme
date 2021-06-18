@@ -32,9 +32,10 @@
 
 .pf-c-form-control:not(textarea) {
     height: 55px !important;
-    font-size: 1.1em;
+    font-size: 1.4em;
     /* TODO: Test label simil material input */
     margin-bottom: 15px;
+    padding-left: 10px;
 }
 
 .pf-c-form-control:focus {
@@ -829,7 +830,7 @@ ul#kc-totp-supported-apps {
 li {
     text-decoration: none;
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -838,6 +839,22 @@ a:hover, a:visited, a:link, a:active {
 
 .ml-19 {
     margin-left: 19%;
+}
+
+.pl-4 {
+    padding-left: 4%;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.logout {
+    margin-top: 10px;
+    margin-right: 40px;
+    height: auto;
+    width: auto;
+    float: right;
 }
 
 /* MEDIA QUERY */

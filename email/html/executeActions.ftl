@@ -1,5 +1,7 @@
 <#outputformat "plainText">
 <#assign requiredActionsText><#if requiredActions??><#list requiredActions><#items as reqActionItem>${msg("requiredAction.${reqActionItem}")}<#sep>, </#sep></#items></#list></#if></#assign>
+<#assign welcomeSubject = "Bienvenido" />
+<#assign updateSubject = "Actualizar" />
 </#outputformat>
 <html>
     <body style="background: #FFFFFF !important;
@@ -56,8 +58,10 @@
         </#if>
         <div style="margin-top: 35px;">
          <#if requiredActionsText == msg("requiredAction.VERIFY_EMAIL")>
+            <#--  ${kcSanitize(msg("executeActionsSubject", welcomeSubject))?no_esc}  -->
             ${kcSanitize(msg("welcomeBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration),user.username, user.getFirstName(), user.getLastName()))?no_esc}
          <#else>
+            <#--  ${kcSanitize(msg("executeActionsSubject", updateSubject))?no_esc}  -->
             ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration),user.username, user.getFirstName(), user.getLastName()))?no_esc}
             <#--  <p>${msg(requiredActionsText)}</p>  -->
         </#if>   

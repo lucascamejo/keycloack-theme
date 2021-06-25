@@ -1,6 +1,6 @@
 
 <html>
-<style>
+<style type="text/css">
     .header-experta {
         width: 100%;
         height: 70px;

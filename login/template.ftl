@@ -45,7 +45,6 @@
     </div>
 </div>
 <div class="${properties.kcLoginClass!}">
-<span>${msg(url.resourcesPath)}</span>
     <#--  <div id="kc-header" class="${properties.kcCustomHeaderTitleClass}">
         <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">
             ${msg("loginTitleHtml")}

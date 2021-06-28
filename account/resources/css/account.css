@@ -856,6 +856,18 @@ a:hover, a:visited, a:link, a:active {
     float: right;
 }
 
+/* Arrow hidden inputs number type Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* MEDIA QUERY */
 @media (max-width: 500px) {
     .button-experta {

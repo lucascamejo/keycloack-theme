@@ -14,7 +14,7 @@
 
     <form action="${url.passwordUrl}" class="row" method="post">
         <div class="col-md-10 col-md-offset-1 mt-20">
-            <input type="text" id="username" name="username" value="${(account.username!'')}" autocomplete="username" readonly="readonly" style="display:none;">
+            <input type="number" id="username" name="username" value="${(account.username!'')}" autocomplete="username" readonly="readonly" style="display:none;">
 
             <#if password.passwordSet>
                 <div class="col-md-12 mb-5">

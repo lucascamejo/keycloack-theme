@@ -18,7 +18,7 @@
         <#if !realm.registrationEmailAsUsername>
             <div class="col-md-12 mb-5">
                 <label for="username" class="${properties.kcLabelClass!}">${msg("username")}</label> <#if realm.editUsernameAllowed></#if>
-                <input type="text" class="pf-c-form-control col-md-8" id="username" name="username" <#if !realm.editUsernameAllowed>disabled="disabled"</#if> value="${(account.username!'')}"/>
+                <input type="number" class="pf-c-form-control col-md-8" id="username" name="username" <#if !realm.editUsernameAllowed>disabled="disabled"</#if> value="${(account.username!'')}"/>
             </div>
         </#if>
 

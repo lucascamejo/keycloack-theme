@@ -817,6 +817,18 @@ ul#kc-totp-supported-apps {
     margin-top: 20px !important;
 }
 
+/* Arrow hidden inputs number type Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* MEDIA QUERY */
 @media (max-width: 500px) {
     .button-experta {

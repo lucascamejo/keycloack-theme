@@ -817,6 +817,140 @@ ul#kc-totp-supported-apps {
     margin-top: 20px !important;
 }
 
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#icon-web {
+    background-image: url('../img/footer/web-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#icon-email {
+    background-image: url('../img/footer/email-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#icon-call {
+    background-image: url('../img/footer/call-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#icon-sucursal {
+    background-image: url('../img/footer/sucursal-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#icon-app {
+    background-image: url('../img/footer/app-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#icon-blog {
+    background-image: url('../img/footer/blog-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#icon-linkedin {
+    background-image: url('../img/footer/linked-in-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#icon-youtube {
+    background-image: url('../img/footer/youtube-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.section-1 {
+    min-height: 50px;
+    background-color: #414042;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+    height: 0;
+    
+}
+.divisor {
+    position: relative;
+    width: 1px;
+    height: 21px;
+    margin: 0 20px;
+    display: inline-block;
+    background-color: white;
+}
+button {
+    display: inline-block;
+    background: none;
+    border: none;
+   
+}
+button:focus {
+    outline: none;
+}
+
+.section-2 {
+    background-color: #dadbdc;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+}
+
+.terms>a {
+    color: #414042 !important;
+    text-decoration: none;
+}
+
+.version {
+  color: white;
+    font-family: DIN;
+    float: right;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.terms {
+    width: 186px;
+    font-size: 9.9px;
+    display: inline-block;
+    padding-left: 40px;
+    border-right: 1px solid #414042;
+    font-weight: bold;
+    vertical-align: top;
+}
+.text {
+    display: inline-block;
+    width: calc(100% - 206px);
+    font-size: 8px;
+    font-weight: 300;
+    padding-left: 40px;
+    padding-right: 10px;
+    text-align: left;
+    vertical-align: super;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
 /* MEDIA QUERY */
 @media (max-width: 500px) {
     .button-experta {
@@ -855,4 +989,17 @@ ul#kc-totp-supported-apps {
     .form-group {
         margin-bottom: 10px !important
     }
-}
+
+    .section-1{
+        height: 15%;
+      }
+
+    .divisor {       
+        margin: 0 1px;        
+    }
+
+    .icon {
+        width: 22px;        
+    }
+    
+} 

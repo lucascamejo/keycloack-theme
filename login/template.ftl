@@ -179,6 +179,42 @@
 
     </div>
   </div>
+<div class="${properties.kcTemplateFooter!}">
+    <div class="section-1">
+        <div class="divisor"></div>
+        <a target="_blank" href="https://experta.com.ar"><button><div id="icon-web" class="${properties.KcIconFooter!}"></div></button></a>
+        <div class="divisor"></div>
+        <a target="_blank" href="https://www.experta.com.ar/contactenos/"><button><div id="icon-email"
+            class="icon"></div></button></a>
+        <div class="divisor"></div>
+        <a href="tel:+5408007777278"><button><div id="icon-call" class="icon"></div></button></a>
+        <div class="divisor"></div>
+        <a target="_blank" href="https://www.experta.com.ar/donde-estamos/"><button><div id="icon-sucursal"
+            class="icon"></div></button></a>
+        <div class="divisor"></div>
+        <button><div id="icon-app" class="icon"></div></button>
+        <div class="divisor"></div>
+        <a target="_blank" href="https://www.experta.com.ar/blogg/"><button><div id="icon-blog"
+            class="icon"></div></button></a>
+        <div class="divisor"></div>
+        <a target="_blank" href="https://www.linkedin.com/company/experta-seguros/"><button><div id="icon-linkedin"
+            class="icon"></div></button></a>
+        <div class="divisor"></div>
+        <a target="_blank" href="https://www.youtube.com/channel/UChEF-f811Pd6etl3VRUxoeA?reload=9"><button><div
+            id="icon-youtube" class="icon"></div></button></a>
+        <div class="divisor"></div>    
+    </div>
+
+    <div class="section-2">
+    <div id="footerTerms" class="terms">
+        <a target="_blank" href="https://www.experta.com.ar/terminos-y-condiciones/">TÉRMINOS Y CONDICIONES</a>
+    </div>
+    <div id="footerLegals" class="text">
+        LOS SEGUROS SON EMITIDOS POR EXPERTA SEGUROS S.A.U AV. DEL LIBERTADOR 6902, PISO 12 (C1429BMP) C.A.B.A., ARGENTINA
+    </div>
+    </div>
+</div>
+
 </body>
 </html>
 </#macro>

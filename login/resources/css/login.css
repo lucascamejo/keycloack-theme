@@ -64,7 +64,7 @@
     z-index: 1000; 
     background-image: url(../img/alerta.svg);
     background-repeat: no-repeat; 
-    background-size: 40px;   
+    background-size: 35px;   
 }
 
 .label-text-input[aria-invalid="true"] {

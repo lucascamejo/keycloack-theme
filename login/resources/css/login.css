@@ -4,8 +4,6 @@
   }
 
 .login-pf body {
-    /* background: url("../img/bkgrnd.jpg") no-repeat center center fixed;
-    background-size: cover; */
     background: #FFFFFF !important;
     height: 100%;
     color: #949493;
@@ -35,10 +33,12 @@
     font-size: 1.1em;
     /* TODO: Test label simil material input */
     margin-bottom: 15px;
+    font-family: 'DIN';
 }
 
-.pf-c-form-control:focus {
-    border-color:#006196;
+.pf-c-form-control:focus(textarea)  {
+    border-color:#006196 !important;
+    z-index: 1000;
     /*  border: 1px solid #006196 !important; */
     /* border-bottom-color: #0066CC; */
     /*  border-bottom-color: var(--pf-global--primary-color--100);
@@ -61,10 +61,14 @@
  */
 .pf-c-form-control[aria-invalid="true"] {
     border-color: #C9190B !important;   
+    z-index: 1000; 
+    background-image: url(../img/alerta.svg);
+    background-repeat: no-repeat; 
+    background-size: 40px;   
 }
 
 .label-text-input[aria-invalid="true"] {
-    color: #C9190B !important;   
+    color: #C9190B !important;
 }
 
 .pf-c-alert.pf-m-inline {
@@ -830,6 +834,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.fa-exclamation-circle {
+    background-image: url(../img/alerta.svg) !important;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;   
+}
+
 /* MEDIA QUERY */
 @media (max-width: 500px) {
     .button-experta {
@@ -868,4 +879,9 @@ input[type=number] {
     .form-group {
         margin-bottom: 10px !important
     }
+
+    .pf-c-form-control[aria-invalid="true"] {        
+        background-size: 1.5em;   
+    }
+    
 }

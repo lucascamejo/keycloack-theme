@@ -60,10 +60,11 @@
   }
  */
 .pf-c-form-control[aria-invalid="true"] {
-    border-bottom-color: #C9190B;
-    border-bottom-color: var(--pf-global--danger-color--100);
-    border-bottom-width: 2px;
-    border-bottom-width: var(--pf-global--BorderWidth--md);
+    border-color: #C9190B !important;   
+}
+
+.label-text-input[aria-invalid="true"] {
+    color: #C9190B !important;   
 }
 
 .pf-c-alert.pf-m-inline {

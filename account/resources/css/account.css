@@ -869,6 +869,32 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.fa-exclamation-circle {
+    background-image: url(../img/icono-alerta.svg) !important;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;   
+}
+
+.fa-exclamation-triangle {
+    background-image: url(../img/icono-error.svg) !important;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;  
+}
+.fa-check-circle {
+    background-image: url(../img/icono-exito.svg) !important;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;  
+}
+.fa-info-circle {
+    background-image: url(../img/icon-info-azul.svg) !important;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;  
+}
+
 /* MEDIA QUERY */
 @media (max-width: 500px) {
     .button-experta {

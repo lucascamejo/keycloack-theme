@@ -98,9 +98,11 @@
 
         <div class="col-md-10 pl-4">
             <#if message?has_content>
-                <div class="alert alert-${message.type}">
-                    <#if message.type=='success' ><span class="pficon pficon-ok"></span></#if>
-                    <#if message.type=='error' ><span class="pficon pficon-error-circle-o"></span></#if>
+                <div class="alert-${message.type} pf-c-alert pf-m-inline pf-m-<#if message.type = 'error'>danger<#else>${message.type}</#if>">
+                    <div class="">
+                        <#if message.type=='success' ><div class="${properties.kcFeedbackSuccessIcon!}"></div></#if>
+                        <#if message.type=='error' ><div class="${properties.kcFeedbackErrorIcon!}"></div></#if>
+                    </div>
                     <span class="kc-feedback-text">${kcSanitize(message.summary)?no_esc}</span>
                 </div>
             </#if>

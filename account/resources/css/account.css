@@ -73,7 +73,8 @@
 }
 
 .pf-c-alert.pf-m-inline {
-    margin-bottom: 25px; /* default - IE compatibility */
+    background-color: #ffffff !important;
+    margin-bottom: 25px;
     padding: 0.25rem;
     border: solid #ededed;
     border-width: 1px;
@@ -104,7 +105,7 @@
 }
 
 .pf-c-alert.pf-m-success .pf-c-alert__title {
-    color: #486B00;
+    color: #606060;
 }
 
 .pf-c-alert.pf-m-danger .pf-c-alert__icon {
@@ -112,7 +113,7 @@
 }
 
 .pf-c-alert.pf-m-danger .pf-c-alert__title {
-    color: #A30000;
+    color: #606060;
 }
 
 .pf-c-alert.pf-m-warning .pf-c-alert__icon {
@@ -120,7 +121,7 @@
 }
 
 .pf-c-alert.pf-m-warning .pf-c-alert__title {
-    color: #795600;
+    color: #606060;
 }
 
 .pf-c-alert__title {
@@ -845,13 +846,13 @@ input[type=number] {
     width: 40px;  
 }
 .fa-check-circle {
-    background-image: url(../img/icono-exito.svg) !important;
+    background-image: url(../img/icono-exito-generico.svg) !important;
     background-repeat: no-repeat;
     height: 40px;
     width: 40px;  
 }
 .fa-info-circle {
-    background-image: url(../img/icon-info-azul.svg) !important;
+    background-image: url(../img/icono-info-generico.svg) !important;
     background-repeat: no-repeat;
     height: 40px;
     width: 40px;  

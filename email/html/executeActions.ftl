@@ -58,7 +58,8 @@
          <#--  <#if requiredActionsText == msg("requiredAction.VERIFY_EMAIL")>  -->
             <#--  ${kcSanitize(msg("welcomeBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration),user.username, user.getFirstName(), user.getLastName()))?no_esc}  -->
          <#--  <#else>  -->
-            ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration),user.username, user.getFirstName(), user.getLastName()))?no_esc}
+            ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration)))?no_esc}
+            <#--  ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration),user.username, user.getFirstName(), user.getLastName()))?no_esc}  -->
             <#--  <p>${msg(requiredActionsText)}</p>  -->
         <#--  </#if>   -->  
         </div>

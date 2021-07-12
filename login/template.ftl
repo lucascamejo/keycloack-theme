@@ -34,15 +34,18 @@
             <script src="${script}" type="text/javascript"></script>
         </#list>
     </#if>
+    <#assign goToDefault><#if client?? && client.baseUrl?has_content>${client.baseUrl}<#else>${url.loginUrl}</#if></#assign>
 </head>
 
 <body class="${properties.kcBodyClass!}">
 <div class="${properties.kcCustomHeaderClass}">
-    <div class="${properties.kcCustomLogoSeguroClass}">
-    </div>
-    <div class="${properties.kcCustomDividerClass}"></div>
-    <div class="${properties.kcCustomLogoARTClass}">
-    </div>
+    <a href="${goToDefault}">
+        <div class="${properties.kcCustomLogoSeguroClass}">
+        </div>
+        <div class="${properties.kcCustomDividerClass}"></div>
+        <div class="${properties.kcCustomLogoARTClass}">
+        </div>
+    </a>
 </div>
 <div class="${properties.kcLoginClass!}">
     <#--  <div id="kc-header" class="${properties.kcCustomHeaderTitleClass}">
@@ -80,6 +83,15 @@
                 </div>
             <#else>
                 <h1 id="kc-page-title"><#nested "header"></h1>
+                <#--  <#if (message.type == 'success' && !displayInfo)>
+                <div class="${properties.kcMT20Class!}">
+                    <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
+                        <div class="${properties.kcFormOptionsWrapperClass!}">
+                            <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
+                        </div>
+                    </div>
+                </div>
+                </#if>  -->
             </#if>
         <#else>
             <#if displayRequiredFields>
@@ -157,6 +169,14 @@
                             <#nested "info">
                         </div>
                     </div>
+                <#--  <#else>
+                    <div class="${properties.kcMT20Class!}">
+                        <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
+                            <div class="${properties.kcFormOptionsWrapperClass!}">
+                                <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
+                            </div>
+                        </div>
+                    </div>  -->
                 </#if> 
             </div>
         </div>

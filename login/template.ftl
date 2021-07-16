@@ -205,26 +205,23 @@
 
             <div class="col-md-6">
                 <div class="col-md-12">
-                    <p >
+                    <p class="contactate">
                     CONTACTATE
                     </p>
                 </div>    
                 <div class="col-md-12 df">                            
-                    <div class="icon-footer">
-                        <a target="_blank" href="https://web.whatsapp.com/send?phone=5491147041830" rel="noopener noreferrer">
-                            <img src="https://i.ibb.co/YP4Kn5t/footer-wpp.png" alt="Cotizá" class="icon-image" >
-                        </a>
-                    </div>
-                    <div class="icon-footer">
-                        <a target="_blank" href="tel:08007777278" rel="noopener noreferrer" >   
-                            <img src="https://i.ibb.co/87PxKvy/footer-telefono.png" alt="Manual de producto" class="icon-image" >
-                        </a>
-                    </div>
-                    <div class="icon-footer">
-                        <a target="_blank" href="mailto:clientes@experta.com.ar" rel="noopener noreferrer" link_name="" >
-                            <img src="https://i.ibb.co/3f17MmH/footer-mail.png" alt="" class="icon-image" >
-                        </a>
-                    </div>
+                    <a target="_blank" href="https://web.whatsapp.com/send?phone=5491147041830" rel="noopener noreferrer">
+                        <div class="icon-footer icon-whatsapp">
+                        </div>
+                    </a>  
+                    <a target="_blank" href="tel:08007777278" rel="noopener noreferrer" >   
+                        <div class="icon-footer icon-phone">
+                        </div>
+                    </a> 
+                    <a target="_blank" href="mailto:clientes@experta.com.ar" rel="noopener noreferrer" link_name="" >
+                        <div class="icon-footer icon-email">
+                        </div>
+                    </a>  
                         
                 </div>
                                                 
@@ -237,70 +234,41 @@
         </div>
 
         <div class="col-md-4">
-
-            <div class="col-md-6">
-                    
-                <div class="col-md-12 df">                    
-                    <img src="https://i1.wp.com/www.apaser.com.ar/wp-content/uploads/2019/05/SSNSuperintendenciadeSeguros.jpg?resize=300%2C55&ssl=1" alt="" class="icon-image" >
+            <div class="row">
+                <div class="col-md-6">                        
+                    <div class="col-md-12 logo-ssn">                    
+                    </div>                                                    
                 </div>
-                
-                                                
-            </div>
-            <div class="col-md-6 phone">
-                <p>0800-666-8400</p>
+
+                <div class="col-md-6">
+                    <b><p class="number">0800-666-8400</p></b>
+                </div>
             </div>
 
             <div class="col-md-12">
-                    <p >
-                    SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN 0-800-666-8400, WWW.SSN.GOB.AR
-                    </p>
-                </div>
-
+                <p class="logo-text">
+                SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN 0-800-666-8400, WWW.SSN.GOB.AR
+                </p>
+            </div>
         </div>
         
         <div class="col-md-4">
-
-            <div class="col-md-6 phone">
-                   
-                <div class="col-md-12 df">                    
-                    <img src="https://www.derechosdeltrabajador.com.ar/images/instit/srt.png" alt="" class="icon-srt" >
+            <div class="row">
+                <div class="col-md-2">                    
+                    <div class="col-md-12 logo-srt">                    
+                    </div>                                                    
                 </div>
-                
-                                                
-            </div>
-            <div class="col-md-6">
-                <p>0800-666-6778</p>
+                <div class="col-md-6">
+                    <b><p class="number">0800-666-6778</p></b>
+                </div>
             </div>
 
             <div class="col-md-12">
-                    <p >
-                    SUPERINTENDENCIA DE RIESGOS DEL TRABAJO 0800-666-6778, WWW.SRT.GOB.AR
-                    </p>
-                </div> 
-
-        </div>
-        
-       <#--   <a target="_blank" href="https://experta.com.ar"><button><div id="icon-web" class="${properties.KcIconFooter!}"></div></button></a>
-        <div class="divisor"></div>
-        <a target="_blank" href="https://www.experta.com.ar/contactenos/"><button><div id="icon-email"
-            class="icon"></div></button></a>
-        <div class="divisor"></div>
-        <a href="tel:+5408007777278"><button><div id="icon-call" class="icon"></div></button></a>
-        <div class="divisor"></div>
-        <a target="_blank" href="https://www.experta.com.ar/donde-estamos/"><button><div id="icon-sucursal"
-            class="icon"></div></button></a>
-        <div class="divisor"></div>
-        <button><div id="icon-app" class="icon"></div></button>
-        <div class="divisor"></div>
-        <a target="_blank" href="https://www.experta.com.ar/blogg/"><button><div id="icon-blog"
-            class="icon"></div></button></a>
-        <div class="divisor"></div>
-        <a target="_blank" href="https://www.linkedin.com/company/experta-seguros/"><button><div id="icon-linkedin"
-            class="icon"></div></button></a>
-        <div class="divisor"></div>
-        <a target="_blank" href="https://www.youtube.com/channel/UChEF-f811Pd6etl3VRUxoeA?reload=9"><button><div
-            id="icon-youtube" class="icon"></div></button></a>
-        <div class="divisor"></div>      -->
+                <p class="logo-text">
+                SUPERINTENDENCIA DE RIESGOS DEL TRABAJO 0800-666-6778, WWW.SRT.GOB.AR
+                </p>
+            </div> 
+        </div>  
     </div>
 
     <div class="section-2">

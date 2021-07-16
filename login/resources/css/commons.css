@@ -27,6 +27,7 @@
     background-color: #858586;
     padding-top: 8px;
     padding-bottom: 8px;
+    display: none;
 }
 
 .icon-footer {
@@ -38,10 +39,79 @@
     width: 30%;
 }
 
+
 .df {
     display: flex;
 }
 
 .phone {
-    font-size: 1.8em;
+}
+
+.number {
+    font-size: 1.7em;
+}
+
+.contactate {
+    padding-left: 10px;
+}
+
+.icon-whatsapp{
+    background-image: url('../img/icono_WPP.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 60px;
+    /* position: absolute; */
+}
+
+.icon-phone{
+    background-image: url('../img/icono_TELEFONO.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 60px;
+    /* position: absolute; */
+}
+
+.icon-email{
+    background-image: url('../img/icono_MAIL.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 60px;
+    /* position: absolute; */
+}
+
+.logo-ssn{
+    background-image: url('../img/icono_SSN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    margin-top: -15px;
+}
+
+.logo-srt{
+    background-image: url('../img/icono_SRT.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    margin-top: -15px;
+}
+
+.logo-text {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 500px) {
+    .footer-experta {
+        position: inherit;
+    }
+    
 }

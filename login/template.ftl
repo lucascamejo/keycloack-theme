@@ -200,8 +200,8 @@
     </div>
   </div>
   <div class="${properties.kcCustomFooter!}">
-    <div class="section-1 row">
-        <div class="col-md-4">
+    <div class="section-1">
+        <div class="col-md-4 col-xs-12">
 
             <div class="col-md-6">
                 <div class="col-md-12">
@@ -233,37 +233,37 @@
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-12">
             <div class="row">
-                <div class="col-md-6">                        
-                    <div class="col-md-12 logo-ssn">                    
+                <div class="col-md-6 col-xs-12">                        
+                    <div class="col-md-12 col-xs-6 logo-ssn">                    
                     </div>                                                    
                 </div>
 
-                <div class="col-md-6">
-                    <b><p class="number">0800-666-8400</p></b>
+                <div class="col-md-6 col-xs-12">
+                    <b><p class="number col-xs-12">0800-666-8400</p></b>
                 </div>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12 col-xs-12">
                 <p class="logo-text">
                 SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN 0-800-666-8400, WWW.SSN.GOB.AR
                 </p>
             </div>
         </div>
         
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-12">
             <div class="row">
-                <div class="col-md-2">                    
-                    <div class="col-md-12 logo-srt">                    
+                <div class="col-md-2  col-xs-12">                    
+                    <div class="col-md-12 col-xs-6 logo-srt">                    
                     </div>                                                    
                 </div>
-                <div class="col-md-6">
-                    <b><p class="number">0800-666-6778</p></b>
+                <div class="col-md-6 col-xs-12">
+                    <b><p class="number col-xs-12">0800-666-6778</p></b>
                 </div>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12 col-xs-12">
                 <p class="logo-text">
                 SUPERINTENDENCIA DE RIESGOS DEL TRABAJO 0800-666-6778, WWW.SRT.GOB.AR
                 </p>

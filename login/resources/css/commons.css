@@ -3,15 +3,15 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    background-color: #dadbdc;
+    height: unset;
 }
 
 .section-1 {
     min-height: 100px;
-    background-color: #dadbdc;
     padding-top: 13px;
     padding-bottom: 13px;
-    /*text-align: center;*/
-    /* height: 0; */    
+    text-align: inherit;
 }
 
 .divisor {
@@ -110,8 +110,27 @@
 
 /* MEDIA QUERY */
 @media (max-width: 500px) {
+    .section-1 {
+       text-align: center;
+    }
+
     .footer-experta {
         position: inherit;
+        overflow: auto
     }
-    
+
+    .logo-ssn,.logo-srt{
+        position: inherit;
+        width: 70%;
+    }
+
+    .df {
+        display: inline-flex;
+        padding-left: 15%;
+    }
+
+    .contactate {
+        padding-left: 0px;
+    }
+
 }

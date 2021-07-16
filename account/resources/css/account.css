@@ -3,7 +3,7 @@
     src: url('./../fonts/353BD4_0_0.woff');
   }
 
-.login-pf body {
+body {
     /* background: url("../img/bkgrnd.jpg") no-repeat center center fixed;
     background-size: cover; */
     background: #FFFFFF !important;

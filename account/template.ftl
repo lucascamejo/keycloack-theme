@@ -111,7 +111,87 @@
         </div>
     </div>
     </div>
+    <div class="${properties.kcCustomFooter!}">
+        <div class="section-1">
+            <div class="col-md-4 col-xs-12">
 
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <p class="contactate">
+                        CONTACTATE
+                        </p>
+                    </div>    
+                    <div class="col-md-12 df">                            
+                        <a target="_blank" href="https://web.whatsapp.com/send?phone=5491147041830" rel="noopener noreferrer">
+                            <div class="icon-footer icon-whatsapp">
+                            </div>
+                        </a>  
+                        <a target="_blank" href="tel:08007777278" rel="noopener noreferrer" >   
+                            <div class="icon-footer icon-phone">
+                            </div>
+                        </a> 
+                        <a target="_blank" href="mailto:clientes@experta.com.ar" rel="noopener noreferrer" link_name="" >
+                            <div class="icon-footer icon-email">
+                            </div>
+                        </a>  
+                            
+                    </div>
+                                                    
+                </div>
+                <div class="col-md-6">
+                    <p>PREVENCIÓN CONTRA EL FRAUDE</p>
+                    <p><a target="_blank" href="https://www.experta.com.ar/terminos-y-condiciones/">TÉRMINOS Y CONDICIONES</a></p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">                        
+                        <div class="col-md-12 col-xs-6 logo-ssn">                    
+                        </div>                                                    
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                        <b><p class="number col-xs-12">0800-666-8400</p></b>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-xs-12">
+                    <p class="logo-text">
+                    SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN 0-800-666-8400, WWW.SSN.GOB.AR
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-xs-12">
+                <div class="row">
+                    <div class="col-md-2  col-xs-12">                    
+                        <div class="col-md-12 col-xs-6 logo-srt">                    
+                        </div>                                                    
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <b><p class="number col-xs-12">0800-666-6778</p></b>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-xs-12">
+                    <p class="logo-text">
+                    SUPERINTENDENCIA DE RIESGOS DEL TRABAJO 0800-666-6778, WWW.SRT.GOB.AR
+                    </p>
+                </div> 
+            </div>  
+        </div>
+
+        <div class="section-2">
+            <div id="footerTerms" class="terms">
+                <a target="_blank" href="https://www.experta.com.ar/terminos-y-condiciones/">TÉRMINOS Y CONDICIONES</a>
+            </div>
+            <div id="footerLegals" class="text">
+                LOS SEGUROS SON EMITIDOS POR EXPERTA SEGUROS S.A.U AV. DEL LIBERTADOR 6902, PISO 12 (C1429BMP) C.A.B.A., ARGENTINA
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 </#macro>

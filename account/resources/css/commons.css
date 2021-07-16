@@ -1,0 +1,136 @@
+.footer-experta {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #dadbdc;
+    height: unset;
+}
+
+.section-1 {
+    min-height: 100px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: inherit;
+}
+
+.divisor {
+    position: relative;
+    width: 1px;
+    height: 21px;
+    margin: 0 20px;
+    display: inline-block;
+    background-color: white;
+}
+
+.section-2 {
+    background-color: #858586;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: none;
+}
+
+.icon-footer {
+    width: 33%;
+}
+
+.icon-srt {
+    height: 50%;
+    width: 30%;
+}
+
+
+.df {
+    display: flex;
+}
+
+.phone {
+}
+
+.number {
+    font-size: 1.7em;
+}
+
+.contactate {
+    padding-left: 10px;
+}
+
+.icon-whatsapp{
+    background-image: url('../img/icono_WPP.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 60px;
+    /* position: absolute; */
+}
+
+.icon-phone{
+    background-image: url('../img/icono_TELEFONO.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 60px;
+    /* position: absolute; */
+}
+
+.icon-email{
+    background-image: url('../img/icono_MAIL.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 60px;
+    /* position: absolute; */
+}
+
+.logo-ssn{
+    background-image: url('../img/icono_SSN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    margin-top: -15px;
+}
+
+.logo-srt{
+    background-image: url('../img/icono_SRT.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    margin-top: -15px;
+}
+
+.logo-text {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 500px) {
+    .section-1 {
+       text-align: center;
+    }
+
+    .footer-experta {
+        position: inherit;
+        overflow: auto
+    }
+
+    .logo-ssn,.logo-srt{
+        position: inherit;
+        width: 70%;
+    }
+
+    .df {
+        display: inline-flex;
+        padding-left: 15%;
+    }
+
+    .contactate {
+        padding-left: 0px;
+    }
+
+}

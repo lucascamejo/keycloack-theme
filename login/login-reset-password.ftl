@@ -32,13 +32,17 @@
                     <input class="${properties.kcCustomButtonClass}" type="submit" value="${msg("emailPasswordRecovery")}"/>
                 </div>
 
-                <div class="${properties.kcMT20Class!}">
-                    <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
+                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!} ${properties.kcCustomBackButton!}">
+                    <a class="${properties.kcCustomBackAction!}" href="${url.loginUrl}" >${kcSanitize(msg("backToLogin"))?no_esc}</a> 
+                </div>
+
+               <#--  <div class="${properties.kcMT20Class!}">                    
+                     <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
                         <div class="${properties.kcFormOptionsWrapperClass!}">
                             <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
                         </div>
-                    </div>
-                </div>
+                    </div> 
+                </div> -->
             </div>
         </form>
     </#if>

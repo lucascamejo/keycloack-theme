@@ -107,6 +107,20 @@
     margin-top: 5px;
 }
 
+.backButton {
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    padding-top: 15px;
+    border: #006196 solid 1px;
+}
+
+a.backAction {
+    text-decoration: none;
+    color: #006196;
+    text-transform: uppercase;
+}
+
 
 /* MEDIA QUERY */
 @media (max-width: 500px) {
@@ -133,4 +147,8 @@
         padding-left: 0px;
     }
 
+    .backButton {
+        height: 35px;
+        padding-top: 5px;
+    }
 }

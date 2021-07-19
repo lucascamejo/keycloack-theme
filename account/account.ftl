@@ -41,7 +41,12 @@
 
     <div class="col-md-10 col-md-offset-1 mt-20">
             <div class="col-md-5">
-                <#if url.referrerURI??><a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a></#if>
+                <#if url.referrerURI??>
+                <div id="kc-form-buttons" class="${properties.kcCustomBackButton!}">
+                    <a class="${properties.kcCustomBackAction!}" href="${url.referrerURI}" >${kcSanitize(msg("backToApplication"))?no_esc}</a> 
+                </div>
+                    <#--  <a href="${url.referrerURI}">${kcSanitize(msg("backToApplication")?no_esc)}</a>  -->
+                </#if>
                 <button type="submit" class="button-experta" name="submitAction" value="Save">${msg("doSave")}</button>
             </div>
             <div class="col-md-5">

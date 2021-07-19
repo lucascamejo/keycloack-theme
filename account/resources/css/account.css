@@ -870,6 +870,10 @@ input[type=number] {
 
 /* MEDIA QUERY */
 @media (max-width: 500px) {
+    .login-pf-page {
+        min-height: 70%;
+    }
+    
     .button-experta {
         height: 35px;
     }

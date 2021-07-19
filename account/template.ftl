@@ -55,11 +55,17 @@
             </div>
         </nav>  -->
         <div class="${properties.kcCustomHeaderClass}">
-            <div class="${properties.kcCustomLogoSeguroClass}">
-            </div>
+            <a href="http://cluster-test.art.com:20400/users/registro">
+                <div class="${properties.kcCustomLogoSeguroClass}">
+                </div>
+            </a>
+
             <div class="${properties.kcCustomDividerClass}"></div>
-            <div class="${properties.kcCustomLogoARTClass}">
-            </div>
+
+            <a href="https://webinstitucional.expertaart.com.ar/">
+                <div class="${properties.kcCustomLogoARTClass}">
+                </div>
+            </a>
             <div class="logout">
                     <ul >
                         <#--  <#if realm.internationalizationEnabled>

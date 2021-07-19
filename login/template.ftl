@@ -34,15 +34,19 @@
             <script src="${script}" type="text/javascript"></script>
         </#list>
     </#if>
+    <#--  Para ir al login  -->
     <#assign goToDefault><#if client?? && client.baseUrl?has_content>${client.baseUrl}<#else>${url.loginUrl}</#if></#assign>
 </head>
 
 <body class="${properties.kcBodyClass!}">
 <div class="${properties.kcCustomHeaderClass}">
-    <a href="${goToDefault}">
+    <a href="http://cluster-test.art.com:20400/users/registro">
         <div class="${properties.kcCustomLogoSeguroClass}">
         </div>
+    </a>
         <div class="${properties.kcCustomDividerClass}"></div>
+
+    <a href="https://webinstitucional.expertaart.com.ar/">
         <div class="${properties.kcCustomLogoARTClass}">
         </div>
     </a>
